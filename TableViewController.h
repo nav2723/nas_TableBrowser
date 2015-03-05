@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableTableViewController.h
 //  TableBrowser
 //
 //  Created by Naveen Srivastava on 3/2/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface TableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 

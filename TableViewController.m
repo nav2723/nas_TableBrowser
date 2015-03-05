@@ -1,29 +1,36 @@
 //
-//  ViewController.m
+//  TableTableViewController.m
 //  TableBrowser
 //
 //  Created by Naveen Srivastava on 3/2/15.
 //  Copyright (c) 2015 NS. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TableViewController.h"
 #import "BrowserViewController.h"
 
-@interface ViewController ()
+@interface TableViewController ()
 
 @end
 
-@implementation ViewController {
-    NSArray *recipes;
+@implementation TableViewController {
+    NSArray *urls;
+    NSArray *urlNames;
 }
 
-@synthesize tableView;
+@synthesize tableView = _tableView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Initialize table data
-    recipes = [NSArray arrayWithObjects:@"http://www.cnn.com", @"http://www.facebook.com", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    urls = [NSArray arrayWithObjects:@"http://www.cnn.com",
+            @"http://www.facebook.com",
+            @"http://www.m.reddit.com",
+            @"http://www.amazon.com",
+            @"www.www.netflix.com", nil];
+    
+    urlNames = [NSArray arrayWithObjects:@"CNN", @"Facebook", @"Reddit", @"Amazon", @"Netflix", nil];
 }
 
 
@@ -40,29 +47,29 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [recipes count];
+    return [urls count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"RecipeCell";
+    static NSString *simpleTableIdentifier = @"urlCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    UITableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
-    cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
+    cell.textLabel.text = [urlNames objectAtIndex:indexPath.row];
     return cell;
 }
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+    if ([segue.identifier isEqualToString:@"showURL"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         BrowserViewController *destViewController = segue.destinationViewController;
-        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+        destViewController.urlName = [urls objectAtIndex:indexPath.row];
     }
 }
 

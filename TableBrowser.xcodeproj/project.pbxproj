@@ -14,13 +14,14 @@
 		E03A27651AA538B0008C36A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E03A27641AA538B0008C36A6 /* main.m */; };
 		E03A27691AA538B0008C36A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E03A27681AA538B0008C36A6 /* AppDelegate.m */; };
 		E03A276C1AA538B0008C36A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03A276A1AA538B0008C36A6 /* Main.storyboard */; };
-		E03A276F1AA538B0008C36A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E03A276E1AA538B0008C36A6 /* ViewController.m */; };
 		E03A27711AA538B0008C36A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E03A27701AA538B0008C36A6 /* Images.xcassets */; };
 		E03A27781AA538B0008C36A6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03A27771AA538B0008C36A6 /* XCTest.framework */; };
 		E03A27791AA538B0008C36A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03A27581AA538B0008C36A6 /* Foundation.framework */; };
 		E03A277A1AA538B0008C36A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03A275C1AA538B0008C36A6 /* UIKit.framework */; };
 		E03A27821AA538B0008C36A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E03A27801AA538B0008C36A6 /* InfoPlist.strings */; };
 		E03A27841AA538B0008C36A6 /* TableBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E03A27831AA538B0008C36A6 /* TableBrowserTests.m */; };
+		E03A278F1AA53980008C36A6 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E03A278E1AA53980008C36A6 /* BrowserViewController.m */; };
+		E03A27951AA53D14008C36A6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E03A27941AA53D14008C36A6 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		E03A27671AA538B0008C36A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E03A27681AA538B0008C36A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E03A276B1AA538B0008C36A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E03A276D1AA538B0008C36A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E03A276E1AA538B0008C36A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E03A27701AA538B0008C36A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E03A27761AA538B0008C36A6 /* TableBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03A27771AA538B0008C36A6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E03A277F1AA538B0008C36A6 /* TableBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		E03A27811AA538B0008C36A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E03A27831AA538B0008C36A6 /* TableBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableBrowserTests.m; sourceTree = "<group>"; };
+		E03A278D1AA53980008C36A6 /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
+		E03A278E1AA53980008C36A6 /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
+		E03A27931AA53D14008C36A6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		E03A27941AA53D14008C36A6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +117,11 @@
 			children = (
 				E03A27671AA538B0008C36A6 /* AppDelegate.h */,
 				E03A27681AA538B0008C36A6 /* AppDelegate.m */,
+				E03A27931AA53D14008C36A6 /* TableViewController.h */,
+				E03A27941AA53D14008C36A6 /* TableViewController.m */,
 				E03A276A1AA538B0008C36A6 /* Main.storyboard */,
-				E03A276D1AA538B0008C36A6 /* ViewController.h */,
-				E03A276E1AA538B0008C36A6 /* ViewController.m */,
+				E03A278D1AA53980008C36A6 /* BrowserViewController.h */,
+				E03A278E1AA53980008C36A6 /* BrowserViewController.m */,
 				E03A27701AA538B0008C36A6 /* Images.xcassets */,
 				E03A275F1AA538B0008C36A6 /* Supporting Files */,
 			);
@@ -249,9 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03A276F1AA538B0008C36A6 /* ViewController.m in Sources */,
+				E03A278F1AA53980008C36A6 /* BrowserViewController.m in Sources */,
 				E03A27691AA538B0008C36A6 /* AppDelegate.m in Sources */,
 				E03A27651AA538B0008C36A6 /* main.m in Sources */,
+				E03A27951AA53D14008C36A6 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +462,7 @@
 				E03A27891AA538B0008C36A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E03A278A1AA538B0008C36A6 /* Build configuration list for PBXNativeTarget "TableBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				E03A278C1AA538B0008C36A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
