@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153F461E1AC1DB6F00AC0684 /* SharedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 153F461D1AC1DB6F00AC0684 /* SharedStore.m */; };
 		E03A27591AA538B0008C36A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03A27581AA538B0008C36A6 /* Foundation.framework */; };
 		E03A275B1AA538B0008C36A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03A275A1AA538B0008C36A6 /* CoreGraphics.framework */; };
 		E03A275D1AA538B0008C36A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03A275C1AA538B0008C36A6 /* UIKit.framework */; };
@@ -22,6 +23,9 @@
 		E03A27841AA538B0008C36A6 /* TableBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E03A27831AA538B0008C36A6 /* TableBrowserTests.m */; };
 		E03A278F1AA53980008C36A6 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E03A278E1AA53980008C36A6 /* BrowserViewController.m */; };
 		E03A27951AA53D14008C36A6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E03A27941AA53D14008C36A6 /* TableViewController.m */; };
+		E08A29D61ABF67C50081C0F3 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E08A29D51ABF67C50081C0F3 /* EditViewController.m */; };
+		E0A29B501ABFACE700F9AE93 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A29B4F1ABFACE700F9AE93 /* AddViewController.m */; };
+		E0A29B561AC1D9A700F9AE93 /* Webpage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A29B551AC1D9A700F9AE93 /* Webpage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153F461C1AC1DB6F00AC0684 /* SharedStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedStore.h; sourceTree = "<group>"; };
+		153F461D1AC1DB6F00AC0684 /* SharedStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedStore.m; sourceTree = "<group>"; };
 		E03A27551AA538B0008C36A6 /* TableBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03A27581AA538B0008C36A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E03A275A1AA538B0008C36A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +62,12 @@
 		E03A278E1AA53980008C36A6 /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
 		E03A27931AA53D14008C36A6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
 		E03A27941AA53D14008C36A6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		E08A29D41ABF67C50081C0F3 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		E08A29D51ABF67C50081C0F3 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		E0A29B4E1ABFACE700F9AE93 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		E0A29B4F1ABFACE700F9AE93 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		E0A29B541AC1D9A700F9AE93 /* Webpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Webpage.h; sourceTree = "<group>"; };
+		E0A29B551AC1D9A700F9AE93 /* Webpage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Webpage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +131,15 @@
 				E03A27681AA538B0008C36A6 /* AppDelegate.m */,
 				E03A27931AA53D14008C36A6 /* TableViewController.h */,
 				E03A27941AA53D14008C36A6 /* TableViewController.m */,
+				E0A29B541AC1D9A700F9AE93 /* Webpage.h */,
+				E0A29B551AC1D9A700F9AE93 /* Webpage.m */,
+				153F461C1AC1DB6F00AC0684 /* SharedStore.h */,
+				153F461D1AC1DB6F00AC0684 /* SharedStore.m */,
 				E03A276A1AA538B0008C36A6 /* Main.storyboard */,
+				E0A29B4E1ABFACE700F9AE93 /* AddViewController.h */,
+				E0A29B4F1ABFACE700F9AE93 /* AddViewController.m */,
+				E08A29D41ABF67C50081C0F3 /* EditViewController.h */,
+				E08A29D51ABF67C50081C0F3 /* EditViewController.m */,
 				E03A278D1AA53980008C36A6 /* BrowserViewController.h */,
 				E03A278E1AA53980008C36A6 /* BrowserViewController.m */,
 				E03A27701AA538B0008C36A6 /* Images.xcassets */,
@@ -254,10 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A29B561AC1D9A700F9AE93 /* Webpage.m in Sources */,
 				E03A278F1AA53980008C36A6 /* BrowserViewController.m in Sources */,
 				E03A27691AA538B0008C36A6 /* AppDelegate.m in Sources */,
+				E0A29B501ABFACE700F9AE93 /* AddViewController.m in Sources */,
+				153F461E1AC1DB6F00AC0684 /* SharedStore.m in Sources */,
 				E03A27651AA538B0008C36A6 /* main.m in Sources */,
 				E03A27951AA53D14008C36A6 /* TableViewController.m in Sources */,
+				E08A29D61ABF67C50081C0F3 /* EditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

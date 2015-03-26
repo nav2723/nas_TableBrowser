@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface TableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, NSCoding>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *urlCombination;
+@property (nonatomic, strong) NSMutableArray *urlsSelf;
+@property (nonatomic, strong) NSMutableArray *urlNamesSelf;
+
+@property (nonatomic, strong) NSString *receivedData;
+
+
+
 
 @end
